@@ -3,6 +3,27 @@
   "assertionSchema": "dataform_assertions",
   "warehouse": "bigquery",
   "defaultDatabase": "hackathon-healthcare-datahub",
-  "defaultLocation": "US"
+  "defaultLocation": "US",
+  "vars": {
+        "src_symedical_dataset": "symedical_jdbc_ingest",
+        "src_datalake_empi_patient_dataset": "nextgate_empi_ingest",
+        "src_datalake_apdh_analytics_dataset": "apdh_analytics_ingest",
+        "stg_dataverse_process_dataset": "dataverse_dataprocess",
+        "tgt_dataverse_dataset": "dataverse",
+        "src_datalake_athena_dataset": "athenadwf_ingest",
+        "src_dataplace_cerner_dataset": "cerner_txaus_ingest",
+        "glb_hist_load_ts": "2018-07-01T00:00:00.00",
+        "glb_overlap_days": "0",
+        "glb_hash_algorithm": "MD5",
+        "glb_null_replace": "^",
+        "glb_hash_concat": "~",
+        "glb_empty_replace": "NA",
+        "glb_max_vld_to_ts": "9999-12-31T00:00:00.00",
+        "glb_vld_fm_ts": "1900-01-01T00:00:00.00",
+        "datalake_project": "asc-datalake-sandbox",
+        "dataplace_project": "asc-ahnat-dataplace-sbx",
+        "dataverse_project": "asc-ahnat-dataverse-sbx"
+    },
+    "timeout": "10m"
 }
     
